@@ -4,7 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
 const mongoose=require("mongoose");
-const url="mongodb+srv://admin:Raj2001@cluster0.bukls.mongodb.net/todolistDB";
+const url="mongodb://localhost:27017/todolistDB";
 
 const lodash=require("lodash");
 const port=process.env.PORT || 3000;
