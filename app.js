@@ -7,7 +7,7 @@ const mongoose=require("mongoose");
 const url="mongodb+srv://admin:Raj2001@cluster0.bukls.mongodb.net/todolistDB";
 
 const lodash=require("lodash");
-
+const port=process.env.PORT || 3000;
 
 mongoose.connect(url);
 const app = express();
@@ -147,6 +147,6 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log("Server started on port 3000");
 });
